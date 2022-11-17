@@ -1,0 +1,129 @@
+https://huggingface.co/patrickvonplaten/wav2vec2-base-v2/resolve/main/preprocessor_config.json not found in cache or force_download set to True, downloading to /root/.cache/huggingface/transformers/tmp3l6uv9jy
+Downloading:   0%|          | 0.00/214 [00:00<?, ?B/s]Downloading: 100%|██████████| 214/214 [00:00<00:00, 435kB/s]
+storing https://huggingface.co/patrickvonplaten/wav2vec2-base-v2/resolve/main/preprocessor_config.json in cache at /root/.cache/huggingface/transformers/c49bb57ee23441a99c889e0c00c8ce0f76b004a2582b1a0145c216bfcd278722.bbc1eb890a39c82e710a893223b8452ac5b78e8b57083b2f893aa7dc59d4ed69
+creating metadata file for /root/.cache/huggingface/transformers/c49bb57ee23441a99c889e0c00c8ce0f76b004a2582b1a0145c216bfcd278722.bbc1eb890a39c82e710a893223b8452ac5b78e8b57083b2f893aa7dc59d4ed69
+loading feature extractor configuration file https://huggingface.co/patrickvonplaten/wav2vec2-base-v2/resolve/main/preprocessor_config.json from cache at /root/.cache/huggingface/transformers/c49bb57ee23441a99c889e0c00c8ce0f76b004a2582b1a0145c216bfcd278722.bbc1eb890a39c82e710a893223b8452ac5b78e8b57083b2f893aa7dc59d4ed69
+Feature extractor Wav2Vec2FeatureExtractor {
+  "do_normalize": true,
+  "feature_extractor_type": "Wav2Vec2FeatureExtractor",
+  "feature_size": 1,
+  "padding_side": "right",
+  "padding_value": 0.0,
+  "return_attention_mask": true,
+  "sampling_rate": 16000
+}
+
+https://huggingface.co/patrickvonplaten/wav2vec2-base-v2/resolve/main/config.json not found in cache or force_download set to True, downloading to /root/.cache/huggingface/transformers/tmpqnmlogzy
+Downloading:   0%|          | 0.00/1.45k [00:00<?, ?B/s]Downloading: 100%|██████████| 1.45k/1.45k [00:00<00:00, 676kB/s]
+storing https://huggingface.co/patrickvonplaten/wav2vec2-base-v2/resolve/main/config.json in cache at /root/.cache/huggingface/transformers/775aaec54f6a77302d2a0fd50293b3414c2db94a6f6fb180b0d0fe8eadc2b606.d0c15351c2f79d371c1beb0cb6a400ee06828cd2495902920a633e1de88cc621
+creating metadata file for /root/.cache/huggingface/transformers/775aaec54f6a77302d2a0fd50293b3414c2db94a6f6fb180b0d0fe8eadc2b606.d0c15351c2f79d371c1beb0cb6a400ee06828cd2495902920a633e1de88cc621
+loading configuration file https://huggingface.co/patrickvonplaten/wav2vec2-base-v2/resolve/main/config.json from cache at /root/.cache/huggingface/transformers/775aaec54f6a77302d2a0fd50293b3414c2db94a6f6fb180b0d0fe8eadc2b606.d0c15351c2f79d371c1beb0cb6a400ee06828cd2495902920a633e1de88cc621
+Model config Wav2Vec2Config {
+  "activation_dropout": 0.0,
+  "adapter_kernel_size": 3,
+  "adapter_stride": 2,
+  "add_adapter": false,
+  "apply_spec_augment": true,
+  "architectures": [
+    "Wav2Vec2ForPreTraining"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "classifier_proj_size": 256,
+  "codevector_dim": 256,
+  "contrastive_logits_temperature": 0.1,
+  "conv_bias": true,
+  "conv_dim": [
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512
+  ],
+  "conv_kernel": [
+    10,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2
+  ],
+  "conv_stride": [
+    5,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "ctc_loss_reduction": "sum",
+  "ctc_zero_infinity": false,
+  "diversity_loss_weight": 0.1,
+  "do_stable_layer_norm": true,
+  "eos_token_id": 2,
+  "feat_extract_activation": "gelu",
+  "feat_extract_dropout": 0.0,
+  "feat_extract_norm": "layer",
+  "feat_proj_dropout": 0.0,
+  "feat_quantizer_dropout": 0.0,
+  "final_dropout": 0.0,
+  "hidden_act": "gelu",
+  "hidden_dropout": 0.0,
+  "hidden_dropout_prob": 0.0,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "layerdrop": 0.0,
+  "mask_feature_length": 10,
+  "mask_feature_min_masks": 0,
+  "mask_feature_prob": 0.0,
+  "mask_time_length": 10,
+  "mask_time_min_masks": 2,
+  "mask_time_prob": 0.65,
+  "model_type": "wav2vec2",
+  "num_adapter_layers": 3,
+  "num_attention_heads": 12,
+  "num_codevector_groups": 2,
+  "num_codevectors_per_group": 320,
+  "num_conv_pos_embedding_groups": 16,
+  "num_conv_pos_embeddings": 128,
+  "num_feat_extract_layers": 7,
+  "num_hidden_layers": 12,
+  "num_negatives": 100,
+  "output_hidden_size": 768,
+  "pad_token_id": 0,
+  "proj_codevector_dim": 256,
+  "tdnn_dilation": [
+    1,
+    2,
+    3,
+    1,
+    1
+  ],
+  "tdnn_dim": [
+    512,
+    512,
+    512,
+    512,
+    1500
+  ],
+  "tdnn_kernel": [
+    5,
+    3,
+    3,
+    1,
+    1
+  ],
+  "transformers_version": "4.17.0",
+  "use_weighted_layer_sum": false,
+  "vocab_size": 32,
+  "xvector_output_dim": 512
+}
+
+Parameter 'function'=<function LoadDataset.prepare_dataset_function at 0x7ff5a676c670> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+0ex [00:00, ?ex/s]1ex [00:01,  1.04s/ex]5ex [00:01,  5.47ex/s]9ex [00:01, 10.05ex/s]13ex [00:01, 14.41ex/s]17ex [00:01, 18.31ex/s]21ex [00:01, 21.64ex/s]25ex [00:01, 24.31ex/s]29ex [00:01, 26.47ex/s]33ex [00:02, 28.00ex/s]37ex [00:02, 29.15ex/s]41ex [00:02, 30.04ex/s]45ex [00:02, 30.70ex/s]49ex [00:02, 31.19ex/s]53ex [00:02, 31.61ex/s]57ex [00:02, 32.02ex/s]61ex [00:02, 32.24ex/s]65ex [00:03, 32.46ex/s]69ex [00:03, 32.53ex/s]73ex [00:03, 32.63ex/s]77ex [00:03, 32.26ex/s]81ex [00:03, 32.30ex/s]85ex [00:03, 31.91ex/s]89ex [00:03, 32.13ex/s]93ex [00:03, 32.43ex/s]97ex [00:04, 32.55ex/s]101ex [00:04, 32.64ex/s]105ex [00:04, 32.68ex/s]109ex [00:04, 32.77ex/s]113ex [00:04, 32.74ex/s]117ex [00:04, 32.86ex/s]121ex [00:04, 32.47ex/s]125ex [00:04, 32.57ex/s]129ex [00:04, 32.65ex/s]133ex [00:05, 32.68ex/s]137ex [00:05, 32.72ex/s]141ex [00:05, 32.81ex/s]145ex [00:05, 32.81ex/s]149ex [00:05, 32.91ex/s]153ex [00:05, 32.46ex/s]157ex [00:05, 32.41ex/s]161ex [00:05, 32.52ex/s]165ex [00:06, 32.55ex/s]169ex [00:06, 32.56ex/s]173ex [00:06, 32.62ex/s]177ex [00:06, 32.25ex/s]181ex [00:06, 32.36ex/s]185ex [00:06, 32.39ex/s]189ex [00:06, 32.28ex/s]193ex [00:06, 32.45ex/s]197ex [00:07, 32.57ex/s]201ex [00:07, 32.57ex/s]205ex [00:07, 32.65ex/s]209ex [00:07, 32.60ex/s]213ex [00:07, 32.58ex/s]217ex [00:07, 32.14ex/s]221ex [00:07, 32.18ex/s]225ex [00:07, 31.46ex/s]229ex [00:08, 31.73ex/s]233ex [00:08, 31.76ex/s]237ex [00:08, 31.18ex/s]241ex [00:08, 31.37ex/s]245ex [00:08, 31.75ex/s]249ex [00:08, 32.11ex/s]253ex [00:08, 32.18ex/s]257ex [00:08, 32.36ex/s]261ex [00:09, 32.52ex/s]265ex [00:09, 32.59ex/s]269ex [00:09, 32.45ex/s]273ex [00:09, 32.59ex/s]277ex [00:09, 32.69ex/s]281ex [00:09, 32.65ex/s]285ex [00:09, 32.47ex/s]289ex [00:09, 32.63ex/s]293ex [00:10, 32.73ex/s]297ex [00:10, 32.72ex/s]301ex [00:10, 32.77ex/s]305ex [00:10, 32.80ex/s]309ex [00:10, 32.86ex/s]313ex [00:10, 32.93ex/s]317ex [00:10, 32.98ex/s]321ex [00:10, 33.00ex/s]325ex [00:11, 32.96ex/s]329ex [00:11, 32.91ex/s]333ex [00:11, 32.91ex/s]337ex [00:11, 32.98ex/s]341ex [00:11, 32.97ex/s]345ex [00:11, 32.93ex/s]349ex [00:11, 32.98ex/s]353ex [00:11, 32.98ex/s]357ex [00:12, 32.74ex/s]361ex [00:12, 32.71ex/s]365ex [00:12, 32.79ex/s]369ex [00:12, 32.74ex/s]373ex [00:12, 32.82ex/s]377ex [00:12, 32.80ex/s]381ex [00:12, 32.83ex/s]385ex [00:12, 32.75ex/s]389ex [00:12, 32.21ex/s]393ex [00:13, 32.39ex/s]397ex [00:13, 32.48ex/s]401ex [00:13, 32.55ex/s]405ex [00:13, 32.66ex/s]409ex [00:13, 32.70ex/s]413ex [00:13, 32.70ex/s]417ex [00:13, 32.74ex/s]421ex [00:13, 32.81ex/s]425ex [00:14, 32.81ex/s]429ex [00:14, 32.76ex/s]433ex [00:14, 32.74ex/s]437ex [00:14, 32.54ex/s]441ex [00:14, 32.62ex/s]445ex [00:14, 32.67ex/s]449ex [00:14, 32.66ex/s]453ex [00:14, 32.68ex/s]457ex [00:15, 32.66ex/s]461ex [00:15, 32.71ex/s]465ex [00:15, 32.73ex/s]469ex [00:15, 32.70ex/s]473ex [00:15, 32.74ex/s]477ex [00:15, 32.74ex/s]481ex [00:15, 32.77ex/s]485ex [00:15, 32.44ex/s]489ex [00:16, 32.47ex/s]493ex [00:16, 32.59ex/s]497ex [00:16, 32.62ex/s]501ex [00:16, 32.71ex/s]505ex [00:16, 32.73ex/s]509ex [00:16, 32.71ex/s]513ex [00:16, 32.75ex/s]517ex [00:16, 32.74ex/s]521ex [00:17, 32.72ex/s]525ex [00:17, 32.73ex/s]529ex [00:17, 32.45ex/s]533ex [00:17, 32.55ex/s]537ex [00:17, 32.58ex/s]541ex [00:17, 32.60ex/s]545ex [00:17, 32.64ex/s]549ex [00:17, 32.65ex/s]553ex [00:18, 32.68ex/s]557ex [00:18, 32.75ex/s]561ex [00:18, 32.74ex/s]565ex [00:18, 32.71ex/s]569ex [00:18, 32.72ex/s]573ex [00:18, 32.73ex/s]577ex [00:18, 32.75ex/s]581ex [00:18, 32.59ex/s]585ex [00:18, 32.64ex/s]589ex [00:19, 32.10ex/s]593ex [00:19, 32.32ex/s]597ex [00:19, 32.44ex/s]601ex [00:19, 32.53ex/s]605ex [00:19, 32.60ex/s]609ex [00:19, 32.65ex/s]613ex [00:19, 32.72ex/s]617ex [00:19, 32.79ex/s]621ex [00:20, 32.04ex/s]625ex [00:20, 32.31ex/s]629ex [00:20, 32.44ex/s]633ex [00:20, 32.53ex/s]637ex [00:20, 32.61ex/s]641ex [00:20, 32.66ex/s]645ex [00:20, 32.70ex/s]649ex [00:20, 32.68ex/s]653ex [00:21, 32.71ex/s]657ex [00:21, 32.69ex/s]661ex [00:21, 32.70ex/s]665ex [00:21, 32.72ex/s]669ex [00:21, 32.71ex/s]673ex [00:21, 32.73ex/s]677ex [00:21, 32.70ex/s]681ex [00:21, 32.72ex/s]685ex [00:22, 32.81ex/s]689ex [00:22, 32.50ex/s]693ex [00:22, 32.34ex/s]697ex [00:22, 32.53ex/s]701ex [00:22, 32.60ex/s]705ex [00:22, 32.62ex/s]709ex [00:22, 32.71ex/s]713ex [00:22, 32.80ex/s]717ex [00:23, 32.80ex/s]721ex [00:23, 32.77ex/s]725ex [00:23, 32.79ex/s]729ex [00:23, 32.76ex/s]733ex [00:23, 32.76ex/s]737ex [00:23, 32.78ex/s]741ex [00:23, 32.79ex/s]745ex [00:23, 32.76ex/s]749ex [00:24, 32.83ex/s]753ex [00:24, 32.86ex/s]757ex [00:24, 32.88ex/s]761ex [00:24, 32.90ex/s]765ex [00:24, 32.93ex/s]769ex [00:24, 32.87ex/s]773ex [00:24, 32.85ex/s]777ex [00:24, 32.82ex/s]781ex [00:24, 32.79ex/s]785ex [00:25, 32.82ex/s]789ex [00:25, 32.87ex/s]793ex [00:25, 32.76ex/s]797ex [00:25, 32.24ex/s]801ex [00:25, 32.26ex/s]805ex [00:25, 32.38ex/s]809ex [00:25, 32.25ex/s]813ex [00:25, 31.66ex/s]817ex [00:26, 31.10ex/s]821ex [00:26, 31.41ex/s]825ex [00:26, 31.80ex/s]829ex [00:26, 32.14ex/s]833ex [00:26, 32.31ex/s]837ex [00:26, 32.44ex/s]841ex [00:26, 32.50ex/s]845ex [00:26, 32.57ex/s]849ex [00:27, 32.64ex/s]853ex [00:27, 32.69ex/s]857ex [00:27, 32.74ex/s]861ex [00:27, 32.78ex/s]865ex [00:27, 32.74ex/s]869ex [00:27, 32.74ex/s]873ex [00:27, 32.72ex/s]877ex [00:27, 32.68ex/s]881ex [00:28, 32.66ex/s]885ex [00:28, 32.71ex/s]889ex [00:28, 32.78ex/s]893ex [00:28, 32.80ex/s]897ex [00:28, 32.82ex/s]901ex [00:28, 32.81ex/s]905ex [00:28, 32.83ex/s]909ex [00:28, 32.87ex/s]913ex [00:29, 32.88ex/s]917ex [00:29, 32.83ex/s]921ex [00:29, 32.79ex/s]925ex [00:29, 32.75ex/s]929ex [00:29, 32.75ex/s]933ex [00:29, 32.74ex/s]937ex [00:29, 32.73ex/s]941ex [00:29, 32.71ex/s]945ex [00:30, 32.72ex/s]
